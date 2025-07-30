@@ -9,6 +9,7 @@ from MoveHistory import MoveHistory
 from VictoryManager import VictoryManager
 from ScoreBoard import ScoreBoard
 from Moves import Moves
+import os
 
 
 class GameState:
@@ -370,14 +371,17 @@ class GameServer:
         finally:
             await self.remove_client(websocket)
 
-
 async def main():
     """פונקציה ראשית לשרת"""
     game_server = GameServer()
-    
+    port = int(os.getenv("PORT", 8765))
     print("🚀 מתחיל שרת משחק KungFu Chess על localhost:8765")
+
+    async with websockets.serve(game_server.handle_client, "0.0.0.0", port):
+
+
     
-    async with websockets.serve(game_server.handle_client, "localhost", 8765):
+    # async with websockets.serve(game_server.handle_client, "localhost", 8765):
         print("✅ השרת רץ ומחכה לחיבורים...")
         await asyncio.Future()  # רץ לנצח
 
