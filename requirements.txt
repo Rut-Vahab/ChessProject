@@ -1,3 +1,5 @@
 websockets
 opencv-python
 keyboard
+numpy
+Pillow
