@@ -1,1 +1,2 @@
-web: python It1_interfaces/GameServer.py
+web: python ./It1_interfaces/GameServer.py
+
