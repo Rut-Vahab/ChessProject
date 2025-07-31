@@ -1,5 +1,5 @@
 websockets
-opencv-python
+opencv-python-headless
 keyboard
 numpy
 Pillow
