@@ -1,5 +1,4 @@
 web:
 
-ls -la /app
-ls -la /app/It1_interfaces
-python /app/It1_interfaces/GameServer.py
+cd ..
+python server\Project11\CTD25\kungfu-chess\It1_interfaces>  
