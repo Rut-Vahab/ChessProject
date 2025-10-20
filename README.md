@@ -22,28 +22,32 @@ This project is a real-time chess-like game called **KungFu Chess**. It supports
 KungFuChess/
 │
 ├─ server/
-│  ├─ GameState.py
-│  ├─ GameServer.py
-|    tests/
-│  ├─ test_game_state.py
-│  ├─ test_moves.py
-│  └─ ...
-│  └─ ...
+├─    It1_interfaces/
+│      ├─ GameState.py
+│      ├─ GameServer.py
+|         tests/
+│          ├─ test_game_state.py
+│          ├─ test_moves.py
+│            └─ ...
+|         └─ ...
+│ 
 │
 ├─ client/
-│  ├─ GameClient.py
-│  ├─ Board.py
-│  ├─ Img.py
-|  ├─   board.csv
-|  ├─ board.png
-|    PIECES/
-|     ├─ NW/moves.txt
-|     ├─ NB/moves.txt
+├─    It1_interfaces/
+│      ├─ GameClient.py
+│      ├─ Board.py
+│      ├─ Img.py
+|      ├─   board.csv
+|      ├─ board.png
+|         pieces/
+|           ├─ NW/moves.txt
+|           ├─ NB/moves.txt
+|             └─ ...
+|         tests/
+│          ├─ test_game_state.py
+│          ├─ test_moves.py
+│            └─ ...
 |      └─ ...
-|   tests/
-│  ├─ test_game_state.py
-│  ├─ test_moves.py
-│  └─ ...
 │  
 ├─ configs/
 │  └─ ...
