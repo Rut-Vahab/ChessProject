@@ -24,29 +24,31 @@ KungFuChess/
 ├─ server/
 │  ├─ GameState.py
 │  ├─ GameServer.py
+|    tests/
+│  ├─ test_game_state.py
+│  ├─ test_moves.py
+│  └─ ...
 │  └─ ...
 │
 ├─ client/
 │  ├─ GameClient.py
 │  ├─ Board.py
 │  ├─ Img.py
-│  └─ ...
-│
-├─ PIECES/
-│  ├─ NW/moves.txt
-│  ├─ NB/moves.txt
-│  └─ ...
-│
-├─ tests/
+|  ├─   board.csv
+|  ├─ board.png
+|    PIECES/
+|     ├─ NW/moves.txt
+|     ├─ NB/moves.txt
+|      └─ ...
+|   tests/
 │  ├─ test_game_state.py
 │  ├─ test_moves.py
 │  └─ ...
-│
+│  
 ├─ configs/
 │  └─ ...
 │
-├─ board.csv
-├─ board.png
+|
 └─ README.md
 ```
 
